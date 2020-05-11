@@ -1,281 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Luigi Di Paolo - Web Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luigi Di Paolo - Web Developer</title>
 
-      <!-- External -->
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      />
+    <!-- External -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-      <link
-         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-         rel="stylesheet"
-      />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
 
-      <!-- Main stylesheet -->
-      <link
-         rel="stylesheet"
-         href="{{ url_for('static', filename='css/style.css') }}"
-      />
-      <link
-         rel="stylesheet"
-         media="screen and (max-width: 768px)"
-         href="{{ url_for('static', filename='css/mobile.css') }}"
-      />
-      <link
-         rel="stylesheet"
-         media="screen and (max-width: 812px) and (orientation:landscape)"
-         href="{{ url_for('static', filename='css/landscape.css') }}"
-      />
-   </head>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="{{ url_for('static', filename='css/mobile.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 812px) and (orientation:landscape)"
+      href="{{ url_for('static', filename='css/landscape.css') }}"
+    />
+  </head>
 
-   <body>
-      <ul id="sticky-nav">
-         <li>
-            <a href="https://github.com/Sdrummolo">
-               <img src="/static/img/github.png" alt="GitHub" title="Github" />
-            </a>
-         </li>
-         <li>
-            <a href="https://www.linkedin.com/in/luigi-di-paolo-9a6306188/">
-               <img
-                  src="/static/img/linkedin.png"
-                  alt="Linkedin"
-                  title="Linkedin"
-               />
-            </a>
-         </li>
-      </ul>
-      <!-- Home section -->
-      <section id="home">
-         <div class="layer"></div>
+  <body>
+    <ul id="sticky-nav">
+      <li>
+        <a href="https://github.com/Sdrummolo">
+          <img src="/static/img/github.png" alt="GitHub" title="Github" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/luigi-di-paolo-9a6306188/">
+          <img src="/static/img/linkedin.png" alt="Linkedin" title="Linkedin" />
+        </a>
+      </li>
+    </ul>
+    <!-- Home section -->
+    <section id="home">
+      <div class="layer"></div>
 
-         <div class="home-content">
-            <h1 class="title">Luigi Di Paolo</h1>
-            <h3 class="lead">
-               Web Developer
-            </h3>
-            <p>Dublin, Ireland</p>
-         </div>
-      </section>
-      <a href="#about" class="scroll-button" id="button-top"
-         ><span class="material-icons">
-            keyboard_arrow_down
-         </span></a
-      >
-      <!-- About section -->
-      <div class="container">
-         <section id="about">
-            <div class="component">
-               <h3 class="section-title-sub">
-                  About me
-               </h3>
-               <h2 class="section-title">
-                  Who am i
-               </h2>
-               <p>
-                  I'm a web designer / developer based in Dublin, Ireland.
-                  <br />I have a passion for web developing and love to create
-                  for web and mobile devices. <br />I love tech, reading,
-                  debating, music and fitness.
-               </p>
-               <p>
-                  I’m currently available for interships and freelance work. If
-                  you have a project that you want to get started, think you
-                  need my help with something or just fancy saying hey, then get
-                  in touch.
-               </p>
-               <a href="#contact" class="submit-button">Message me</a>
-            </div>
-            <div class="section-component" id="skills">
-               <h2 class="section-title">
-                  Languages, Frameworks & Libraries
-               </h2>
-
-               <ul id="languages">
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/html5.png"
-                        alt="HTML5"
-                        title="HTML5"
-                     />
-                  </li>
-                  <li class="tech-icon-container">
-                     <img src="/static/img/css3.png" alt="CSS3" title="CSS3" />
-                  </li>
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/javascript.png"
-                        alt="Javascript"
-                        title="Javascript"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/react.png"
-                        alt="React"
-                        title="React"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/nodejs.png"
-                        alt="NodeJS"
-                        title="NodeJS"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/python.png"
-                        alt="Python"
-                        title="Python"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/flask.png"
-                        alt="flask"
-                        title="Flask"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/bootstrap.png"
-                        alt="Bootstrap"
-                        title="Bootstrap"
-                     />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img src="/static/img/sass.png" alt="Sass" title="Sass" />
-                  </li>
-
-                  <li class="tech-icon-container">
-                     <img
-                        src="/static/img/postgresql.png"
-                        alt="PostgreSQL"
-                        title="PostgreSQL"
-                     />
-                  </li>
-               </ul>
-            </div>
-         </section>
-
-         <!-- Projects Section -->
-         <section id="projects">
-            <h2 class="section-title">
-               All projects
-            </h2>
-
-            <div id="projects-grid">
-               <!-- Tweeetter app -->
-               <div class="card">
-                  <div class="card-img" id="card-2"></div>
-                  <div class="card-content">
-                     <h2 class="card-title">
-                        Tweeetter
-                     </h2>
-                     <p class="card-text">
-                        Simple social network App built with React.
-                     </p>
-                     <div class="card-technologies">
-                        <ul>
-                           <li>
-                              <img src="/static/img/css3.png" alt="" />
-                           </li>
-
-                           <li>
-                              <img src="/static/img/react.png" alt="" />
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="card-buttons">
-                        <a
-                           href="https://sdrummolo.github.io/tweeetter/"
-                           target="_blank"
-                           class="card-link"
-                           >Live Site</a
-                        >
-                        <a
-                           href="https://github.com/Sdrummolo/Tweeetter"
-                           target="_blank"
-                           class="card-link"
-                           >View Repo</a
-                        >
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- Contact section -->
-         <section id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <!-- Form -->
-            <div class="contact-form">
-               <form action="/" method="post">
-                  <div class="form-group">
-                     <label for="name">Name</label>
-                     <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        autocomplete="off"
-                        required
-                     />
-                  </div>
-                  <div class="form-group">
-                     <label for="email">Email</label>
-                     <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        autocomplete="off"
-                        required
-                     />
-                  </div>
-                  <div class="form-group">
-                     <label for="message">Message</label>
-                     <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="7"
-                        autocomplete="off"
-                        required
-                     ></textarea>
-                     <div id="popup">
-                        <p>Message sent!</p>
-                        <i class="material-icons" id="clear">
-                           clear
-                        </i>
-                     </div>
-                     <button type="submit" class="submit-button">
-                        Send message
-                     </button>
-                  </div>
-               </form>
-            </div>
-         </section>
+      <div class="home-content">
+        <h1 class="title">Luigi Di Paolo</h1>
+        <h3 class="lead">
+          Web Developer
+        </h3>
+        <p>Dublin, Ireland</p>
       </div>
-      <a href="#home" class="scroll-button" id="button-bottom"
-         ><span class="material-icons">
-            keyboard_arrow_up
-         </span></a
-      >
-      <footer>
-         <small>&copy; 2020</small>
-      </footer>
-      <script src="{{ url_for('static', filename='app.js') }}"></script>
-   </body>
+    </section>
+    <a href="#about" class="scroll-button" id="button-top"
+      ><span class="material-icons">
+        keyboard_arrow_down
+      </span></a
+    >
+    <!-- About section -->
+    <div class="container">
+      <section id="about">
+        <div class="component">
+          <h3 class="section-title-sub">
+            About me
+          </h3>
+          <h2 class="section-title">
+            Who am i
+          </h2>
+          <p>
+            I'm a web designer / developer based in Dublin, Ireland.
+            <br />I have a passion for web developing and love to create for web and mobile devices.
+            <br />I love tech, reading, debating, music and fitness.
+          </p>
+          <p>
+            I’m currently available for interships and freelance work. If you have a project that
+            you want to get started, think you need my help with something or just fancy saying hey,
+            then get in touch.
+          </p>
+          <a href="#contact" class="submit-button">Message me</a>
+        </div>
+        <div class="section-component" id="skills">
+          <h2 class="section-title">
+            Languages, Frameworks & Libraries
+          </h2>
+
+          <ul id="languages">
+            <li class="tech-icon-container">
+              <img src="/static/img/html5.png" alt="HTML5" title="HTML5" />
+            </li>
+            <li class="tech-icon-container">
+              <img src="/static/img/css3.png" alt="CSS3" title="CSS3" />
+            </li>
+            <li class="tech-icon-container">
+              <img src="/static/img/javascript.png" alt="Javascript" title="Javascript" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/react.png" alt="React" title="React" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/nodejs.png" alt="NodeJS" title="NodeJS" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/python.png" alt="Python" title="Python" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/flask.png" alt="flask" title="Flask" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/sass.png" alt="Sass" title="Sass" />
+            </li>
+
+            <li class="tech-icon-container">
+              <img src="/static/img/postgresql.png" alt="PostgreSQL" title="PostgreSQL" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="section-title">
+          All projects
+        </h2>
+
+        <div id="projects-grid">
+          <!-- Tweeetter app -->
+          <div class="card">
+            <div class="card-img" id="card-1"></div>
+            <div class="card-content">
+              <h2 class="card-title">
+                Tweeetter
+              </h2>
+              <p class="card-text">
+                Simple social network App built with React.
+              </p>
+              <div class="card-technologies">
+                <ul>
+                  <li>
+                    <img src="/static/img/css3.png" alt="" />
+                  </li>
+
+                  <li>
+                    <img src="/static/img/react.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="card-buttons">
+                <a href="https://sdrummolo.github.io/tweeetter/" target="_blank" class="card-link"
+                  >Live Site</a
+                >
+                <a href="https://github.com/Sdrummolo/Tweeetter" target="_blank" class="card-link"
+                  >View Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Ebuy -->
+          <div class="card">
+            <div class="card-img" id="card-2"></div>
+            <div class="card-content">
+              <h2 class="card-title">
+                Ebuy
+              </h2>
+              <p class="card-text">
+                E-commerce website powered by the Ebay Finding API
+              </p>
+              <div class="card-technologies">
+                <ul>
+                  <li>
+                    <img src="/static/img/css3.png" alt="" />
+                  </li>
+
+                  <li>
+                    <img src="/static/img/react.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="card-buttons">
+                <a href="https://sdrummolo.github.io/ebuy/" target="_blank" class="card-link"
+                  >Live Site</a
+                >
+                <a href="https://github.com/Sdrummolo/ebuy" target="_blank" class="card-link"
+                  >View Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->`
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <form action="/" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="7"
+                autocomplete="off"
+                required
+              ></textarea>
+              <div id="popup">
+                <p>Message sent!</p>
+                <i class="material-icons" id="clear">
+                  clear
+                </i>
+              </div>
+              <button type="submit" class="submit-button">
+                Send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <a href="#home" class="scroll-button" id="button-bottom"
+      ><span class="material-icons">
+        keyboard_arrow_up
+      </span></a
+    >
+    <footer>
+      <small>&copy; 2020</small>
+    </footer>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
 </html>

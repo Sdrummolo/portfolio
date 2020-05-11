@@ -387,11 +387,11 @@ section {
 }
 #projects #card-1 {
   width: 100%;
-  background: url(/static/img/weather_app.png) center center/cover;
+  background: url(/static/img/tweeetter.png) center center/cover;
 }
 #projects #card-2 {
   width: 100%;
-  background: url(/static/img/tweeetter.png) center center/cover;
+  background: url(/static/img/ebuy.png) center center/cover;
 }
 
 #contact h2 {
