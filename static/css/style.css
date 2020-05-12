@@ -394,17 +394,12 @@ section {
   background: url(/static/img/ebuy.png) center center/cover;
 }
 #projects #card-3 {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-#projects #card-3 video {
-  width: 100%;
+  background: url(/static/img/flack_gif.gif) center center/cover;
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+  width: 100%;
 }
 
 .no-site a {
